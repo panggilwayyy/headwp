@@ -15,16 +15,7 @@ const SingleTypeAudio: FC<Props> = ({ post }) => {
   );
   const isAudio = postFormats === "audio";
   //
-
-   // Cek data post di console
-  console.log("post data:", post); // <-- lihat isi object post
-  console.log("postFormats:", postFormats); // <-- lihat apakah tipe postnya audio
-  console.log("featuredImage:", featuredImage); // <-- cek image yang ada
-  // Kalau kamu tahu field URL audio di post, misal post.ncmazAudioUrl?.audioUrl, cek juga:
-  console.log("audio url:", (post as any)?.ncmazAudioUrl?.audioUrl); // <-- cek link audio, ganti sesuai field asli
-
-  // ... kode lain tetap sama
-
+  
   const renderIcon = (playing: boolean) => {
     if (playing) {
       return (
